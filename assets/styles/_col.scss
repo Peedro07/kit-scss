@@ -1,0 +1,10 @@
+$column-count: 12;
+.col {
+  width: 100%;
+}
+
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    max-width: percentage($i / $column-count);
+  }
+}
